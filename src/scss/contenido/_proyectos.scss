@@ -1,0 +1,128 @@
+.sweetalert-lg{
+    zoom: 1.5;
+}
+
+.titulo-boton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    // a.boton {
+    //     @include boton($oscuro, block);
+    //     margin-bottom: 1rem;
+    //     padding: 1.5rem 4.4rem;
+
+    //         @include tablet {
+    //             margin-bottom: 0;
+    //             margin-right: 3.2rem;
+    //         }
+    // }
+
+    .nuevo {
+        max-width: 3.5rem;
+        max-height: 3.5rem;
+
+        margin-bottom: 1rem;
+
+        @include tablet {
+            margin-bottom: 0;
+            margin-right: 8rem;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+table.propiedades {
+    //margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 2rem;
+
+    thead {
+        background-color: $oscuro;
+
+        th {
+            color: $blanco;
+            padding: 2rem;
+            text-align: center;
+        }
+    }
+
+    td {
+        border-bottom: 1px solid $gris;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center;
+        vertical-align: middle;
+        padding: 1rem;
+    }
+
+    .wrap {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        height: auto;
+        text-align: start;
+    }
+
+    .imagen-tabla {
+        max-width: 25rem;
+        max-height: 25rem;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    table.propiedades td[data-titulo] {
+        display: flex;
+    }
+
+    table.propiedades td[data-titulo]::before {
+        content: attr(data-titulo);
+        width: 14rem;
+        border-right: 1px solid gray;
+    }
+
+    table.propiedades tr {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        //padding: 1rem;
+        margin-bottom: 2rem;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    table.propiedades thead {
+        display: none;
+    }
+}
+
+.tabla-botones {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+
+    a.boton {
+        @include boton($oscuro, block);
+        //width: 100%;
+        margin-bottom: 1rem;
+    }
+}

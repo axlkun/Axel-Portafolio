@@ -1,0 +1,70 @@
+.footer{
+    background-color: $negro;
+    margin: 0;
+
+    .contenido-footer{
+        text-align: center;
+        border-bottom: 1px solid $gris_oscuro;
+        padding: 1rem 0;
+
+        a{
+            color: $blanco;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+
+            @include tablet{
+                font-size: 1.6rem;
+            }
+
+            &:hover{
+                color: $gris;
+            }
+
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+
+        @include tablet{
+            text-align: left;
+        }
+    }
+
+    .copy-redes{
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 1rem 0;
+
+        @include tablet{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .copyright{
+            text-align: center;
+            font-size: 1.5rem;
+            text-align: center;
+            color: $blanco;
+            padding: 1rem 0;
+            margin-bottom: 0;
+
+            @include tablet{
+                padding: 0 0 1rem 0;
+            }
+        }
+
+        .footer-redes{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            justify-content: center;
+
+            .icono{
+                filter: invert(100%);
+            }
+        }
+    }
+    
+}

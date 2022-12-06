@@ -1,0 +1,100 @@
+// .no-webp .servicios{
+//     background-image: url('/build/img/background.png');
+// }
+
+// .webp .servicios{
+//     background-image: url('/build/img/background.webp');
+// }
+
+.servicios{
+    // background-position: top top;
+    // background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: $background;
+
+    @include desktop{
+        min-height: 100vh;
+    }
+
+    h1{
+        font-weight: 900;
+        font-size: 4rem;
+        // color: $negro;
+        color: $letra_corrusel;
+    }
+
+    .contenido-servicios{
+        //margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+
+        &:last-of-type{
+            margin-bottom: 1rem;
+        }
+
+        @include tablet{
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+        .servicio{
+
+            // background-color: $blanco_2;
+            background-color: $background_card;
+            border-radius: 8px;
+            padding: 3rem;
+            margin: 1rem;
+
+            @include tablet{
+
+                &:hover{
+                    transform: scale(1.05);
+                    transition: transform 0.5s ease;
+                }
+                
+            }
+
+            .titulo{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                align-content: space-between;
+                justify-content: center;
+                gap: 1rem;
+                margin-bottom: 1.5rem;
+
+                h2{
+                    font-size: 2rem;
+                    margin: 0;
+                    font-weight: 900;
+                    color: $letra_corrusel;
+                }
+    
+                img{
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+
+            p{
+                margin: 0;
+                font-size: 1.8rem;
+                color: $letra_corrusel;
+
+                span{
+                    font-weight: 900;
+                    color: $letra_corrusel;
+                }
+            }
+
+        }
+
+    }
+
+    
+}

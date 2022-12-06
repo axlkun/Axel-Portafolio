@@ -1,0 +1,49 @@
+// Fuentes
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+@font-face {
+    font-family: 'Roadam';
+    src: url('Roadam.woff2') format('woff2'),
+         url('Roadam.otf') format('truetype');
+    
+}
+
+$fuente_principal: 'Lato', sans-serif;
+
+
+$delgada: 300;
+$regular : 400;
+$bold: 700;
+$black: 900;
+
+//Paleta
+
+$negro: #1b1b1b;
+$blanco: white;
+$blanco_2: #fbfbfb;
+$base: #eceae1;
+$base_1: #f2f0ea;
+$base_2: #f0eee7;
+$base_3: #d4d3cb;
+$oscuro:#363a36;
+$naranja_oscuro: #ee5f19;
+$naranja: #ef6356;
+$naranja_2: #ef8660;
+$naranja_3: #ef928a;
+$naranja_4: #efbb94;
+$gris_oscuro: #414641;
+$gris: #6c746c;
+$gris_1: #8a8b86;
+$gris_2: #babbb6;
+$gris_3: #c9c9c2;
+$gris_4: #eeeeee;
+$letra_corrusel: #9297a5;
+$background: #1a1a1a;
+$background_card: #232325;
+
+
+//Screen breakpoints
+$telefono: 600px;
+$tablet: 768px;
+$desktop: 992px;
+$large: 1200px
